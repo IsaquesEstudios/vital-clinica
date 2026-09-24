@@ -6,7 +6,7 @@ body{margin:0;background:var(--vc-color-off-white);color:var(--vc-color-graphite
 a{color:inherit;text-decoration:none}
 img{display:block;width:100%}
 button,input,textarea{font:inherit}
-.container{width:100%;margin-inline:auto;padding-inline:var(--vc-space-6)}
+.container{width:100%;max-width:1440px;margin-inline:auto;padding-inline:var(--vc-space-6)}
 .site-header{position:relative;z-index:10;background:var(--vc-color-white);box-shadow:var(--vc-shadow-sm)}
 .topline{background:var(--vc-color-petroleum-deep);color:var(--vc-color-white);font-size:var(--vc-space-3)}
 .topline-inner{display:flex;justify-content:space-between;padding-block:var(--vc-space-2)}
