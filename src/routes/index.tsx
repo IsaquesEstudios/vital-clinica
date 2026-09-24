@@ -3,15 +3,6 @@ import { useRef, type RefObject } from "react";
 import content from "@/data/vital-content.json";
 import { SiteLayout, ActionButton } from "@/components/SiteLayout";
 import { Button, Card, CardContent, CardFooter, CardHeader, CardMedia, CardTitle } from "@/design-system/vital-clinica-a4fa5f";
-import brasilBeneficios from "@/assets/partners/logo-brasil-beneficios.png.asset.json";
-import labormed from "@/assets/partners/labormed.png.asset.json";
-import elKadri from "@/assets/partners/el-kadri.png.asset.json";
-import abraps from "@/assets/partners/abraps.png.asset.json";
-import bradescoSaude from "@/assets/partners/bradesco-saude.png.asset.json";
-import arcelorMittal from "@/assets/partners/arcelormittal.png.asset.json";
-import vivest from "@/assets/partners/vivest.png.asset.json";
-import geapSaude from "@/assets/partners/geap-saude.png.asset.json";
-
 export const Route = createFileRoute("/")({
  head:()=>({meta:[{title:"Cardiologista em Três Lagoas — Clínica Vitalcor"},{name:"description",content:"Cardiologia e exames cardiológicos em Três Lagoas, com atendimento humano, tecnologia e uma equipe experiente."},{property:"og:title",content:"Clínica Vitalcor — Cardiologia em Três Lagoas"},{property:"og:description",content:"Consultas e exames cardiológicos com cuidado, precisão e acolhimento."},{property:"og:type",content:"website"},{property:"og:url",content:"/"},{name:"twitter:card",content:"summary_large_image"}],links:[{rel:"canonical",href:"/"}],scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"MedicalClinic",name:"Clínica Vitalcor",url:"https://clinicavitalcor.com.br",telephone:"+55 67 98457-3508",email:"contato@clinicavitalcor.com.br",address:{"@type":"PostalAddress",streetAddress:"Rua Dr. Munir Thomé, 2170",addressLocality:"Três Lagoas",addressRegion:"MS",postalCode:"79603-050",addressCountry:"BR"}})}]}),
  component:Home
@@ -25,10 +16,10 @@ const examNames: Record<string, string> = {
   "doppler-de-carotidas-e-vertebrais": "Doppler de Carótidas e Vertebrais",
 };
 const partners = [
- {name:"Brasil Benefícios",src:brasilBeneficios.url},{name:"Labormed",src:labormed.url},
- {name:"Fidelidade El Kadri",src:elKadri.url},{name:"ABRAPS",src:abraps.url},
- {name:"Bradesco Saúde",src:bradescoSaude.url},{name:"ArcelorMittal",src:arcelorMittal.url},
- {name:"Vivest",src:vivest.url},{name:"GEAP Saúde",src:geapSaude.url},
+ {name:"Brasil Benefícios",src:"/media/partners/logo-brasil-beneficios.png"},{name:"Labormed",src:"/media/partners/labormed.png"},
+ {name:"Fidelidade El Kadri",src:"/media/partners/el-kadri.png"},{name:"ABRAPS",src:"/media/partners/abraps.png"},
+ {name:"Bradesco Saúde",src:"/media/partners/bradesco-saude.png"},{name:"ArcelorMittal",src:"/media/partners/arcelormittal.png"},
+ {name:"Vivest",src:"/media/partners/vivest.png"},{name:"GEAP Saúde",src:"/media/partners/geap-saude.png"},
 ];
 
 function Home(){
