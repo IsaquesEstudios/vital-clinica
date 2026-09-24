@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { Button } from "@/design-system/vital-clinica-a4fa5f";
-import logo from "@/design-system/vital-clinica-a4fa5f/assets/logos/vitalcor-logo.jpg";
+import logo from "@/assets/logo-vitalcor-clean.png";
 
 const services = [
   ["Cardiologia", "cardiologia"],
@@ -21,7 +21,6 @@ export function ActionButton({ to = "/contato", children = "Agendar consulta", v
 export function SiteLayout({ children }: { children: ReactNode }) {
   return <div className="site-shell">
     <header className="site-header">
-      <div className="topline"><div className="container topline-inner"><span>Cardiologia com cuidado e precisão</span><a href="tel:+5567984573508">(67) 98457-3508</a></div></div>
       <div className="container nav-row">
         <Link to="/" className="brand" aria-label="Vitalcor — início"><img src={logo} alt="Vitalcor" /></Link>
         <nav className="main-nav" aria-label="Navegação principal">
