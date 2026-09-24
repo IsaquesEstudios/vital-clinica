@@ -34,11 +34,8 @@ h3{font-size:var(--vc-space-5)}
 .intro-band{background:var(--vc-color-white)}
 .text-link{color:var(--vc-color-petroleum);font-weight:700}.text-link span{color:var(--vc-color-terracotta)}
 .card-grid,.article-grid,.team-grid,.three-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--vc-space-5)}
-.vc-card__media{height:calc(var(--vc-space-8) * 4)}.vc-card__media img{height:100%;object-fit:cover}
 .services-section{background:var(--vc-color-off-white)}
 .trust-band,.values{background:var(--vc-color-champagne)}.trust-band img,.section-image{max-height:calc(var(--vc-space-8) * 8);object-fit:cover;border-radius:var(--vc-radius-lg);box-shadow:var(--vc-shadow-md)}
-.article-grid article,.team-grid article{background:var(--vc-color-white);border:solid var(--vc-color-border);border-width:var(--vc-space-1);border-radius:var(--vc-radius-lg);overflow:hidden;padding-bottom:var(--vc-space-5)}
-.article-grid article>img,.team-grid article>img{height:calc(var(--vc-space-8) * 4);object-fit:cover}.article-grid article>*:not(img),.team-grid article>*:not(img){margin-inline:var(--vc-space-5)}
 .article-grid h2,.article-grid h3{margin-bottom:var(--vc-space-3)}
 .cta-band{padding-block:var(--vc-space-8);background:var(--vc-color-petroleum);color:var(--vc-color-white)}
 .site-footer{background:var(--vc-color-petroleum-deep);color:var(--vc-color-white);padding-top:var(--vc-space-8)}.footer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--vc-space-7)}.footer-grid h2{color:var(--vc-color-champagne);font-family:var(--vc-font-body);font-size:var(--vc-space-4)}.footer-grid a{display:block;margin-bottom:var(--vc-space-2)}.footer-logo{max-width:calc(var(--vc-space-8) * 3);margin-bottom:var(--vc-space-4)}.footer-bottom{display:flex;justify-content:space-between;gap:var(--vc-space-5);margin-top:var(--vc-space-8);padding-block:var(--vc-space-5);border-top:solid var(--vc-color-border);border-width:var(--vc-space-1);font-size:var(--vc-space-3)}.footer-bottom div{display:flex;gap:var(--vc-space-4)}
