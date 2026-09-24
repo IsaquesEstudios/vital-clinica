@@ -1,29 +1,17 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import content from "@/data/vital-content.json";
+import { SiteLayout, ActionButton } from "@/components/SiteLayout";
+import { Card, CardContent, CardFooter, CardHeader, CardMedia, CardTitle, Badge } from "@/design-system/vital-clinica-a4fa5f";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+ head:()=>({meta:[{title:"Cardiologista em Três Lagoas — Clínica Vitalcor"},{name:"description",content:"Cardiologia e exames cardiológicos em Três Lagoas, com atendimento humano, tecnologia e uma equipe experiente."},{property:"og:title",content:"Clínica Vitalcor — Cardiologia em Três Lagoas"},{property:"og:description",content:"Consultas e exames cardiológicos com cuidado, precisão e acolhimento."},{property:"og:type",content:"website"},{property:"og:url",content:"/"},{name:"twitter:card",content:"summary_large_image"}],links:[{rel:"canonical",href:"/"}],scripts:[{type:"application/ld+json",children:JSON.stringify({"@context":"https://schema.org","@type":"MedicalClinic",name:"Clínica Vitalcor",url:"https://clinicavitalcor.com.br",telephone:"+55 67 98457-3508",email:"contato@clinicavitalcor.com.br",address:{"@type":"PostalAddress",streetAddress:"Rua Dr. Munir Thomé, 2170",addressLocality:"Três Lagoas",addressRegion:"MS",postalCode:"79603-050",addressCountry:"BR"}})}]}),
+ component:Home
 });
-
-// Placeholder route. Add pages as files in src/routes/.
-function Index() {
-  return (
-    <div
-      style={{
-        display: "flex",
-        minHeight: "100vh",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "#fcfbf8",
-      }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+function Home(){const hero=content.homeImages.find(x=>x.src.includes('clinica-vitalcor.webp'))??content.homeImages[0]; return <SiteLayout>
+ <section className="home-hero"><img src={hero?.src} alt={hero?.alt||"Clínica Vitalcor"}/><div className="hero-overlay"/><div className="container hero-copy"><Badge variant="champagne">Cardiologia em Três Lagoas</Badge><h1>Cuidado que acompanha cada batida.</h1><p>Prevenção, diagnóstico e acompanhamento cardiovascular com escuta atenta e precisão clínica.</p><div className="button-row"><ActionButton/><ActionButton to="/a-clinica" variant="secondary">Conheça a Vitalcor</ActionButton></div></div></section>
+ <section className="section intro-band"><div className="container split"><div><p className="eyebrow">Clínica Vitalcor</p><h2>Cuidando bem para cuidar sempre.</h2></div><div><p>Há mais de 13 anos, reunimos profissionais experientes e exames cardiológicos modernos para prevenir doenças, detectar alterações precocemente e orientar cada decisão com segurança.</p><Link className="text-link" to="/a-clinica">Conheça nossa história <span>→</span></Link></div></div></section>
+ <section className="section services-section"><div className="container"><div className="section-heading"><div><p className="eyebrow">Cuidado completo</p><h2>Consultas e exames cardiológicos</h2></div><p>Uma jornada de cuidado clara, do primeiro atendimento ao acompanhamento.</p></div><div className="card-grid">{content.services.map((s,i)=><Card key={s.slug} variant="outlined">{s.images[0]?<CardMedia><img src={s.images[0].src} alt={s.images[0].alt||s.title}/></CardMedia>:null}<CardHeader><CardTitle>{s.title}</CardTitle></CardHeader><CardContent><p>{s.description||s.sections[0]}</p></CardContent><CardFooter><Link className="text-link" to="/$service" params={{service:s.slug}}>Saiba mais <span>→</span></Link></CardFooter></Card>)}</div></div></section>
+ <section className="section trust-band"><div className="container split"><div><p className="eyebrow">Nossa equipe</p><h2>Experiência clínica, atenção genuína.</h2><p>Três cardiologistas comprometidos com um atendimento responsável, atualizado e humano.</p><ActionButton to="/equipe" variant="secondary">Conheça os profissionais</ActionButton></div>{content.staticImages['a-clinica'][3]?<img src={content.staticImages['a-clinica'][3].src} alt="Equipe da Clínica Vitalcor"/>:null}</div></section>
+ <section className="section latest"><div className="container"><div className="section-heading"><div><p className="eyebrow">Informação confiável</p><h2>Conteúdos para cuidar do coração</h2></div><Link className="text-link" to="/noticias">Ver todas as notícias <span>→</span></Link></div><div className="article-grid">{content.articles.slice(-3).reverse().map(a=><article key={a.slug}>{a.hero?<img src={a.hero.src} alt={a.hero.alt||a.title}/>:null}<p className="article-date">{a.date||"Saúde cardiovascular"}</p><h3><Link to="/noticias/$slug" params={{slug:a.slug}}>{a.title}</Link></h3><p>{a.description}</p></article>)}</div></div></section>
+ <section className="cta-band"><div className="container split"><div><p className="eyebrow">Estamos perto de você</p><h2>Cuide hoje da sua saúde cardiovascular.</h2></div><ActionButton>Falar com a Vitalcor</ActionButton></div></section>
+ </SiteLayout>}
