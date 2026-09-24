@@ -22,14 +22,15 @@ function Home(){
  const recent=content.articles.slice(-3).reverse();
  return <SiteLayout>
   <section className="home-intro">
-   <div className="container home-intro-grid">
-    <div className="home-intro-copy"><p className="eyebrow">Clínica Vitalcor</p><h1>Cuidado que protege o seu <em>maior bem.</em></h1><p>Cardiologia completa, tecnologia avançada e uma equipe dedicada à sua saúde e bem-estar.</p><div className="button-row"><ActionButton/><Button variant="secondary" onClick={()=>window.location.href="https://wa.me/5567984573508"}>Falar no WhatsApp</Button></div></div>
-    <div className="home-intro-photo"><img src="/media/clinica-vital-cor-profissionais-original.webp" alt="Profissionais da Clínica Vitalcor"/></div>
+    <img className="home-intro-background" src="/media/Card-fundo.webp" alt="" aria-hidden="true" />
+    <div className="container home-intro-grid">
+     <div className="home-intro-copy"><h1>Cuidado que<br/>protege o seu<br/><em>maior bem.</em></h1><p>Cardiologia completa, tecnologia avançada e uma equipe dedicada à sua saúde e bem-estar.</p><div className="button-row"><ActionButton><span className="button-icon" aria-hidden="true">▣</span> Agendar consulta</ActionButton><Button variant="secondary" onClick={()=>window.location.href="https://wa.me/5567984573508"}><span className="button-icon" aria-hidden="true">◉</span> Falar no WhatsApp</Button></div></div>
+     <div className="home-intro-photo"><img src="/media/doutores-vital-clinica.webp" alt="Médicos da Clínica Vitalcor"/></div>
    </div>
   </section>
   <div className="container"><section className="proof-strip" aria-label="Diferenciais da Vitalcor">
-   <div className="years"><span aria-hidden="true">♡</span><strong>+13</strong><p><b>Mudando vidas há mais de 13 anos</b>Excelência e compromisso com a saúde do seu coração.</p></div>
-   <div className="proof-item"><span aria-hidden="true">♙</span><p><b>Atendimento</b>Humanizado</p></div><div className="proof-item"><span aria-hidden="true">◇</span><p><b>Tecnologia</b>Avançada</p></div><div className="proof-item"><span aria-hidden="true">♡</span><p><b>Diagnósticos</b>Confiáveis</p></div>
+    <div className="years"><span aria-hidden="true">♡</span><strong>+13</strong><p><b>Mudando vidas há mais de 13 anos</b>Excelência e compromisso com a saúde do seu coração.</p></div>
+    <div className="proof-item"><span aria-hidden="true">♙</span><p><b>Atendimento</b>Humanizado</p></div><div className="proof-item"><span aria-hidden="true">♧</span><p><b>Tecnologia</b>Avançada</p></div><div className="proof-item"><span aria-hidden="true">♡</span><p><b>Diagnósticos</b>Confiáveis</p></div>
   </section></div>
   <section className="section home-exams"><div className="container"><div className="center-heading"><p className="eyebrow">Exames realizados</p><h2>Tecnologia para cuidar do seu coração</h2></div><div className="home-exam-grid">{exams.map(s=><Card key={s.slug} variant="elevated">{s.images[0]?<CardMedia><img src={s.images[0].src} alt={s.images[0].alt||examNames[s.slug]}/><span className="media-symbol" aria-hidden="true">♡</span></CardMedia>:null}<CardHeader><CardTitle>{examNames[s.slug]||s.title}</CardTitle></CardHeader><CardContent><p>{s.sections[0]}</p></CardContent><CardFooter><Link className="arrow-link" aria-label={`Saiba mais sobre ${examNames[s.slug]||s.title}`} to="/$service" params={{service:s.slug}}>→</Link></CardFooter></Card>)}</div><div className="center-action"><Button variant="secondary" onClick={()=>navigate({to:"/$service",params:{service:"cardiologia"}})}>Ver todos os exames</Button></div></div></section>
   <section className="section appointment-feature"><div className="container appointment-panel"><div><p className="eyebrow">Atendimento especializado</p><h2>Marque sua consulta com um cardiologista</h2><p>Nossa equipe oferece atendimento completo e individualizado para cuidar da sua saúde com segurança e excelência.</p><ActionButton/></div><div className="appointment-image"><img src="/media/cardiologista-profissional.jpg" alt="Cardiologista da Clínica Vitalcor em atendimento"/></div></div></section>
