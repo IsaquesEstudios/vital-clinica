@@ -33,11 +33,11 @@ export function SiteLayout({ children }: { children: ReactNode }) {
     </header>
     <main>{children}</main>
     <footer className="site-footer"><div className="container footer-grid">
-      <div><img className="footer-logo" src={logo} alt="Vitalcor"/><p>A prevenção, a detecção precoce e o cuidado cardiovascular guiados por atendimento humano.</p></div>
+      <div><img className="footer-logo" src={logo} alt="Vitalcor"/><p>A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento adequado das doenças do coração, para proporcionar uma melhor qualidade de vida aos seus pacientes.</p></div>
       <div><h2>Atendimento</h2><p>Rua Dr. Munir Thomé, 2170<br/>Centro — Três Lagoas, MS<br/>CEP 79603-050</p><a href="mailto:contato@clinicavitalcor.com.br">contato@clinicavitalcor.com.br</a></div>
       <div><h2>Encontre</h2><Link to="/a-clinica">A Clínica</Link><Link to="/equipe">Equipe</Link><Link to="/noticias">Notícias</Link><Link to="/contato">Contato</Link></div>
       <div><h2>Serviços</h2>{services.slice(0,5).map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div>
-    </div><div className="container footer-bottom"><p>As informações deste site são informativas e não substituem consulta, diagnóstico ou tratamento médico.</p><div><Link to="/politica-de-privacidade">Política de Privacidade</Link><Link to="/termos-de-uso">Termos de Uso</Link></div></div></footer>
+    </div><div className="container footer-bottom"><p><strong>Aviso:</strong> As informações disponíveis neste site têm finalidade exclusivamente informativa e não substituem a consulta, diagnóstico ou tratamento médico. Sempre procure o seu médico ou profissional de saúde para quaisquer dúvidas que possa ter em relação a uma condição médica.</p><div><Link to="/politica-de-privacidade">Política de Privacidade</Link><Link to="/termos-de-uso">Termos de Uso</Link></div></div></footer>
   </div>;
 }
 
