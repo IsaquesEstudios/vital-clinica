@@ -1,3 +1,5 @@
+import "./styles/theme.css";
+
 export { Badge } from "./components/badge";
 export type { BadgeProps } from "./components/badge";
 export { Button } from "./components/button";

@@ -12,6 +12,7 @@ Vitalcor communicates clinical authority with human warmth. Experiences should f
 - Use the published Vitalcor components before creating parallel controls.
 - Use tokens from `design-tokens.md` for every color, spacing, radius, type, and shadow decision. Never insert an ad-hoc visual value when a token covers the role.
 - Playfair Display is reserved for expressive titles and editorial emphasis. Montserrat is the default for navigation, controls, labels, and body copy.
+- Load Montserrat (weights 400–700) and Playfair Display (weights 500–700) in the consumer document head before rendering Vitalcor interfaces.
 - Petroleum blue carries authority and hierarchy. Terracotta identifies primary action. Champagne adds restrained warmth; it must not dominate large content areas.
 - Keep layouts spacious, ordered, and easy to scan. Decorative elements must never compete with health information or actions.
 - Prefer short, reassuring Portuguese copy. Avoid alarmist language, exaggerated medical promises, and unexplained jargon.

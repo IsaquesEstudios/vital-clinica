@@ -36,6 +36,15 @@ Reference via `var(--name)` in inline styles or CSS.
 |---|
 | `--vc-font-display` |
 | `--vc-font-body` |
+| `--vc-text-caption` |
+| `--vc-text-label` |
+| `--vc-text-body-sm` |
+| `--vc-text-body` |
+| `--vc-text-lead` |
+| `--vc-text-card-title` |
+| `--vc-text-section-title` |
+| `--vc-text-page-title` |
+| `--vc-text-editorial` |
 
 ## Spacing
 

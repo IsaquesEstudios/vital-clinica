@@ -2,7 +2,7 @@
   "meta": {
     "name": "Vital Clinica",
     "package": "@ws-workspace-01m03v06d0fcytj6tdzec1k7zr/d8561e81-9689-4e1a-9d92-973f8e4422f6",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "framework": "react",
     "css_framework": "plain-css",
     "component_library": "vitalcor",
@@ -12,12 +12,13 @@
     ],
     "source_type": "local",
     "source_manifest": {
-      "#enrichment": "39066712cd313da0530a15a6b9f73ed114f7fea41febd5542a8ba14253353ca5",
+      "#enrichment": "7c25b2a8a37167bcd872d7805d09e891ff5f4f52a8a6e5dd12fd2f27c81a7ea1",
       ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
       ".gitignore": "6059213806e442947666752f3db6bfdc",
-      ".lovable/meta.yaml": "633917cece481c66f122ca975c87ec91",
+      ".lovable/meta.yaml": "8cf5bfafc75ed3c252a545f47be45cac",
+      ".lovable/plan/refinar-a-escala-tipográfica-vitalcor-2026-09-24.md": "90133919c5003be3a473d3b1fdaada4b",
       ".lovable/sources.yaml": "04c98d3358f2ccf212d9437490dd3e83",
-      ".lovable/system.md": "6bd16fa7d5b4bfa4469271c6e69b6ec9",
+      ".lovable/system.md": "acb114e81ccdb160cfc79d551724253c",
       "README.md": "d19675c449605f23c7cfa133c69b398b",
       "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
       "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
@@ -30,9 +31,9 @@
       "src/design-system/components/button.tsx": "50cad2c8dbbcd629fe04a3fe217f0c63",
       "src/design-system/components/card.tsx": "770347f1ea53228694dcc046b4a4a5b6",
       "src/design-system/components/input.tsx": "311c25d705f80dae2eade85d7b054142",
-      "src/design-system/index.ts": "143512118ea865ced12b38b6c8ea360f",
+      "src/design-system/index.ts": "b735567ff0e3f950a1b568835341126c",
       "src/design-system/lib/utils.ts": "30dffd5b77d285244f369424fbf5f9c9",
-      "src/design-system/styles/theme.css": "8cfeceecd935c88e77f9ccf26c0c50f7",
+      "src/design-system/styles/theme.css": "b8dfb5e5050ef4d81a82921003bba129",
       "src/index.ts": "575c220411934d70091b4a9af71ee4c3",
       "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
       "src/routeTree.gen.ts": "6f67a8aebc2c09c9c5ed77ffc35e30e7",
@@ -45,7 +46,7 @@
       "src/routes/index.tsx": "1b63819838b9755bf878db5fb8c57b63",
       "src/routes/typography.tsx": "f29267c967236f010060cf99a5512d03",
       "src/showcase/Showcase.tsx": "095eb40cd40a7f614083e9589a2ca13f",
-      "src/styles.css": "c25c5114c691980462e28adf63a428cc",
+      "src/styles.css": "4ddbdc5c49536ac35b3f4513a1b24213",
       "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
       "vite.config.ts": "a99d983076495f848761d0f97f17062a",
       "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
@@ -176,6 +177,51 @@
       {
         "name": "--vc-font-body",
         "raw": "\"Montserrat\", Arial, sans-serif",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-caption",
+        "raw": "0.6875rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-label",
+        "raw": "0.75rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-body-sm",
+        "raw": "0.875rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-body",
+        "raw": "1rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-lead",
+        "raw": "1.0625rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-card-title",
+        "raw": "1.25rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-section-title",
+        "raw": "1.75rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-page-title",
+        "raw": "clamp(2.5rem, 5vw, 4.25rem)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-text-editorial",
+        "raw": "clamp(2.25rem, 5vw, 4rem)",
         "source": "src/design-system/styles/theme.css"
       }
     ],
