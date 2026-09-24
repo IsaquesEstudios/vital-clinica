@@ -1,0 +1,380 @@
+{
+  "meta": {
+    "name": "Vital Clinica",
+    "package": "@ws-workspace-01m03v06d0fcytj6tdzec1k7zr/d8561e81-9689-4e1a-9d92-973f8e4422f6",
+    "version": "1.0.0",
+    "framework": "react",
+    "css_framework": "plain-css",
+    "component_library": "vitalcor",
+    "starter_template": "custom_design_system",
+    "theme_files": [
+      "src/design-system/styles/theme.css"
+    ],
+    "source_type": "local",
+    "source_manifest": {
+      "#enrichment": "39066712cd313da0530a15a6b9f73ed114f7fea41febd5542a8ba14253353ca5",
+      ".dsignore": "5dc76db8e8768ad1270090c0bd33946d",
+      ".gitignore": "6059213806e442947666752f3db6bfdc",
+      ".lovable/meta.yaml": "633917cece481c66f122ca975c87ec91",
+      ".lovable/sources.yaml": "04c98d3358f2ccf212d9437490dd3e83",
+      ".lovable/system.md": "6bd16fa7d5b4bfa4469271c6e69b6ec9",
+      "README.md": "d19675c449605f23c7cfa133c69b398b",
+      "bunfig.toml": "25f4c8696b22b0943db7191e0cdf7942",
+      "eslint.config.js": "07a67437fb1a45ab36d6de0145ff09de",
+      "lovable.toml": "b32568cbef680de9cbb176344986f1a3",
+      "mockupPreviewPlugin.ts": "70d01fe16b7ca25f16ff6bdb97f08b0b",
+      "package.json": "707caee8cbea8d6122afb0af9e20c7e6",
+      "public/favicon.png": "820471b7590f8cfb4197d8b71ca03080",
+      "src/assets/logos/vitalcor-logo.jpg": "7956a97bebbd2531f10eef66e28064e3",
+      "src/design-system/components/badge.tsx": "4d1400a4bda83abc0fd9f0b8b5475fc6",
+      "src/design-system/components/button.tsx": "50cad2c8dbbcd629fe04a3fe217f0c63",
+      "src/design-system/components/card.tsx": "770347f1ea53228694dcc046b4a4a5b6",
+      "src/design-system/components/input.tsx": "311c25d705f80dae2eade85d7b054142",
+      "src/design-system/index.ts": "143512118ea865ced12b38b6c8ea360f",
+      "src/design-system/lib/utils.ts": "30dffd5b77d285244f369424fbf5f9c9",
+      "src/design-system/styles/theme.css": "8cfeceecd935c88e77f9ccf26c0c50f7",
+      "src/index.ts": "575c220411934d70091b4a9af71ee4c3",
+      "src/mockup-preview.d.ts": "ae9d81e2b8514e13fd59b5b6bece9a64",
+      "src/routeTree.gen.ts": "6f67a8aebc2c09c9c5ed77ffc35e30e7",
+      "src/router.tsx": "8f905e713b0eba7fa8148b7995a708c9",
+      "src/routes/[__component].preview.$.tsx": "e4bf310e591541d31abf0cfeeb1121a4",
+      "src/routes/[__mockup].preview.$.tsx": "5d9f42470848aa60148f20f9580e240e",
+      "src/routes/__root.tsx": "7dedf311f49275b7a60e27f9b74e7862",
+      "src/routes/colors.tsx": "a6eb909f22177c39302183541918d0ea",
+      "src/routes/components.tsx": "824c9e07b199a402df349a519a44e986",
+      "src/routes/index.tsx": "1b63819838b9755bf878db5fb8c57b63",
+      "src/routes/typography.tsx": "f29267c967236f010060cf99a5512d03",
+      "src/showcase/Showcase.tsx": "095eb40cd40a7f614083e9589a2ca13f",
+      "src/styles.css": "c25c5114c691980462e28adf63a428cc",
+      "tsconfig.json": "994abf64c2b9f78b568879f80ed0170e",
+      "vite.config.ts": "a99d983076495f848761d0f97f17062a",
+      "wrangler.jsonc": "680b897d48e44bcc65fe437c29b38f3b"
+    },
+    "pipeline_version": 8
+  },
+  "tokens": {
+    "color": [
+      {
+        "name": "--vc-color-champagne",
+        "raw": "#d6c1a3",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-off-white",
+        "raw": "#f8f6f2",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-petroleum",
+        "raw": "#1f3a4d",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-petroleum-deep",
+        "raw": "#132c3b",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-terracotta",
+        "raw": "#b46a42",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-terracotta-deep",
+        "raw": "#945334",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-graphite",
+        "raw": "#2b2b2b",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-white",
+        "raw": "#ffffff",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-muted",
+        "raw": "#6d7276",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-border",
+        "raw": "#ded9d1",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-success",
+        "raw": "#49705e",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-color-error",
+        "raw": "#a23d38",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--primary",
+        "raw": "hover:not(:disabled)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--secondary",
+        "raw": "hover:not(:disabled)",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "spacing": [
+      {
+        "name": "--vc-space-1",
+        "raw": "0.25rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-2",
+        "raw": "0.5rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-3",
+        "raw": "0.75rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-4",
+        "raw": "1rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-5",
+        "raw": "1.5rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-6",
+        "raw": "2rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-7",
+        "raw": "3rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-space-8",
+        "raw": "4rem",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "typography": [
+      {
+        "name": "--vc-font-display",
+        "raw": "\"Playfair Display\", Georgia, serif",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-font-body",
+        "raw": "\"Montserrat\", Arial, sans-serif",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "radius": [
+      {
+        "name": "--vc-radius-sm",
+        "raw": "0.25rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-radius-md",
+        "raw": "0.375rem",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-radius-lg",
+        "raw": "0.5rem",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "shadow": [
+      {
+        "name": "--vc-shadow-sm",
+        "raw": "0 0.125rem 0.5rem rgb(43 43 43 / 8%)",
+        "source": "src/design-system/styles/theme.css"
+      },
+      {
+        "name": "--vc-shadow-md",
+        "raw": "0 0.75rem 2rem rgb(31 58 77 / 12%)",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ],
+    "other": [
+      {
+        "name": "--quiet",
+        "raw": "hover:not(:disabled)",
+        "source": "src/design-system/styles/theme.css"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Badge",
+      "file": "src/design-system/components/badge",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "petroleum",
+            "champagne",
+            "terracotta",
+            "neutral"
+          ],
+          "default": "petroleum"
+        }
+      ],
+      "usage": "Use for short categories or availability states.",
+      "examples": [
+        {
+          "label": "Exam category",
+          "code": "\u003cBadge variant=\"champagne\"\u003eExame\u003c/Badge\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not place sentences inside a badge."
+      ]
+    },
+    {
+      "name": "Button",
+      "file": "src/design-system/components/button",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "primary",
+            "secondary",
+            "quiet"
+          ],
+          "default": "primary"
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "values": [
+            "sm",
+            "md",
+            "lg"
+          ],
+          "default": "md"
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "usage": "Use for clear actions in appointment and care journeys.",
+      "examples": [
+        {
+          "label": "Primary appointment action",
+          "code": "\u003cButton\u003eAgendar consulta\u003c/Button\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not style action hierarchy with one-off class names."
+      ]
+    },
+    {
+      "name": "Card",
+      "file": "src/design-system/components/card",
+      "import_path": "",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "values": [
+            "elevated",
+            "outlined",
+            "accent"
+          ],
+          "default": "elevated"
+        }
+      ],
+      "usage": "Use to group one exam, specialty, or focused care topic.",
+      "examples": [
+        {
+          "label": "Exam card",
+          "code": "\u003cCard variant=\"accent\"\u003e\u003cCardHeader\u003e\u003cCardTitle\u003eEcocardiograma\u003c/CardTitle\u003e\u003c/CardHeader\u003e\u003c/Card\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not nest cards inside cards."
+      ]
+    },
+    {
+      "name": "CardContent",
+      "file": "src/design-system/components/card",
+      "import_path": ""
+    },
+    {
+      "name": "CardFooter",
+      "file": "src/design-system/components/card",
+      "import_path": ""
+    },
+    {
+      "name": "CardHeader",
+      "file": "src/design-system/components/card",
+      "import_path": ""
+    },
+    {
+      "name": "CardMedia",
+      "file": "src/design-system/components/card",
+      "import_path": ""
+    },
+    {
+      "name": "CardTitle",
+      "file": "src/design-system/components/card",
+      "import_path": ""
+    },
+    {
+      "name": "Input",
+      "file": "src/design-system/components/input",
+      "import_path": "",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": true
+        },
+        {
+          "name": "hint",
+          "type": "string"
+        },
+        {
+          "name": "error",
+          "type": "string"
+        }
+      ],
+      "usage": "Use for labeled patient and contact information fields.",
+      "examples": [
+        {
+          "label": "Contact name",
+          "code": "\u003cInput label=\"Nome completo\" autoComplete=\"name\" /\u003e"
+        }
+      ],
+      "antipatterns": [
+        "Do not omit the visible label."
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "file": "src/assets/logos/vitalcor-logo.jpg",
+      "kind": "logo",
+      "format": "jpg"
+    }
+  ]
+}
