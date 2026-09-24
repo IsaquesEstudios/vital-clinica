@@ -4,13 +4,13 @@ import { Button } from "@/design-system/vital-clinica-a4fa5f";
 import logo from "@/design-system/vital-clinica-a4fa5f/assets/logos/vitalcor-logo.jpg";
 
 const services = [
-  ["Cardiologia", "/cardiologia"],
-  ["Doppler", "/doppler-de-carotidas-e-vertebrais"],
-  ["Ecocardiograma", "/ecocardiograma"],
-  ["Eletrocardiograma", "/eletrocardiograma"],
-  ["Holter 24h", "/holter-24h"],
-  ["Exame MAPA", "/mapa-monitorizacao-ambulatorial-da-pressao-arterial"],
-  ["Teste Ergométrico", "/teste-ergometrico"],
+  ["Cardiologia", "cardiologia"],
+  ["Doppler", "doppler-de-carotidas-e-vertebrais"],
+  ["Ecocardiograma", "ecocardiograma"],
+  ["Eletrocardiograma", "eletrocardiograma"],
+  ["Holter 24h", "holter-24h"],
+  ["Exame MAPA", "mapa-monitorizacao-ambulatorial-da-pressao-arterial"],
+  ["Teste Ergométrico", "teste-ergometrico"],
 ] as const;
 
 export function ActionButton({ to = "/contato", children = "Agendar consulta", variant = "primary" }: { to?: string; children?: ReactNode; variant?: "primary" | "secondary" | "quiet" }) {
@@ -26,7 +26,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <Link to="/" className="brand" aria-label="Vitalcor — início"><img src={logo} alt="Vitalcor" /></Link>
         <nav className="main-nav" aria-label="Navegação principal">
           <Link to="/">Início</Link><Link to="/a-clinica">A Clínica</Link>
-          <details className="nav-services"><summary>Serviços</summary><div className="service-menu">{services.map(([label,to])=><Link key={to} to={to}>{label}</Link>)}</div></details>
+          <details className="nav-services"><summary>Serviços</summary><div className="service-menu">{services.map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div></details>
           <Link to="/equipe">Equipe</Link><Link to="/noticias">Notícias</Link><Link to="/contato">Contato</Link>
         </nav>
         <ActionButton />
@@ -37,7 +37,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <div><img className="footer-logo" src={logo} alt="Vitalcor"/><p>A prevenção, a detecção precoce e o cuidado cardiovascular guiados por atendimento humano.</p></div>
       <div><h2>Atendimento</h2><p>Rua Dr. Munir Thomé, 2170<br/>Centro — Três Lagoas, MS<br/>CEP 79603-050</p><a href="mailto:contato@clinicavitalcor.com.br">contato@clinicavitalcor.com.br</a></div>
       <div><h2>Encontre</h2><Link to="/a-clinica">A Clínica</Link><Link to="/equipe">Equipe</Link><Link to="/noticias">Notícias</Link><Link to="/contato">Contato</Link></div>
-      <div><h2>Serviços</h2>{services.slice(0,5).map(([label,to])=><Link key={to} to={to}>{label}</Link>)}</div>
+      <div><h2>Serviços</h2>{services.slice(0,5).map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div>
     </div><div className="container footer-bottom"><p>As informações deste site são informativas e não substituem consulta, diagnóstico ou tratamento médico.</p><div><Link to="/politica-de-privacidade">Política de Privacidade</Link><Link to="/termos-de-uso">Termos de Uso</Link></div></div></footer>
   </div>;
 }
