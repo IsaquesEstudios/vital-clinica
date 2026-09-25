@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ActionButton, PageHero, SiteLayout } from "@/components/SiteLayout";
 import {
-  Badge,
   Card,
   CardContent,
   CardHeader,
@@ -15,33 +14,17 @@ const description =
   "A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento adequado das doenças do coração, para proporcionar uma melhor qualidade de vida aos seus pacientes.";
 
 const professionals = [
-  {
-    name: "Dr. Ulisses Calandrin",
-    role: "Cardiologista",
-    registration: "CRM-MS: 6601",
-    image: "/media/Dr.-Ulisses-Calandrin-1.webp",
-  },
-  {
-    name: "Dra. Vanessa C. Calandrin",
-    role: "Cardiologista",
-    registration: "CRM-MS: 6602",
-    image: "/media/Dra.-Vanessa-C.-Calandrin-1.webp",
-  },
-  {
-    name: "Dra. Nádia Arenas Versali",
-    role: "Cardiologista e ergometrista",
-    registration: "CRM/MS: 9969",
-    image: "/media/Nadia-Arenas-Versali.jpg",
-  },
-] as const;
-
-const newProfessionals = [
   { name: "Dra. Marina Vasconcelos", role: "Cardiologista", image: "/media/medico-marina.webp" },
   { name: "Dra. Juliana Prado", role: "Cardiologista", image: "/media/medico-juliana.webp" },
   { name: "Dra. Camila Fontes", role: "Cardiologista", image: "/media/medico-camila.webp" },
   { name: "Dra. Beatriz Ramos", role: "Cardiologista", image: "/media/medico-beatriz.webp" },
   { name: "Dr. Rafael Monteiro", role: "Cardiologista", image: "/media/medico-rafael.webp" },
   { name: "Dr. André Siqueira", role: "Cardiologista", image: "/media/medico-andre.webp" },
+  { name: "Dr. Ricardo Almeida", role: "Cardiologista", image: "/media/medico-ricardo.webp" },
+  { name: "Dr. Fernando Tavares", role: "Cardiologista", image: "/media/medico-fernando.webp" },
+  { name: "Dr. Paulo Henrique Nogueira", role: "Cardiologista", image: "/media/medico-paulo.webp" },
+  { name: "Dra. Larissa Duarte", role: "Cardiologista", image: "/media/medico-larissa.webp" },
+  { name: "Dr. Marcelo Kimura", role: "Cardiologista", image: "/media/medico-marcelo.webp" },
 ];
 
 export const Route = createFileRoute("/a-clinica")({
@@ -175,7 +158,7 @@ function ClinicPage() {
             <h2>Nossos profissionais</h2>
           </div>
           <div className="team-grid">
-            {[...professionals, ...newProfessionals].map((professional) => (
+            {professionals.map((professional) => (
               <Card key={professional.name}>
                 <CardMedia>
                   <img src={professional.image} alt={professional.name} />
@@ -185,9 +168,6 @@ function ClinicPage() {
                 </CardHeader>
                 <CardContent>
                   <p>{professional.role}</p>
-                  {"registration" in professional ? (
-                    <Badge variant="champagne">{professional.registration}</Badge>
-                  ) : null}
                 </CardContent>
               </Card>
             ))}
