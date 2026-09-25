@@ -108,7 +108,7 @@ function ClinicPage() {
         <div className="container clinic-intro-grid">
           <div className="clinic-copy">
             <p className="eyebrow">Nossa clínica</p>
-            <h2>Clínica Vitalcor</h2>
+            <h2>Clinica VitalCor</h2>
             <p>
               A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como
               objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento
@@ -131,8 +131,7 @@ function ClinicPage() {
       <section className="section clinic-care">
         <div className="container clinic-care-grid">
           <div>
-            <p className="eyebrow">Cuidando bem para cuidar sempre</p>
-            <h2>Há mais de 13 anos cuidando de pessoas.</h2>
+            <h2>Cuidando bem para Cuidar sempre.</h2>
             <p>
               Estamos a mais de 13 anos fazendo o que amamos, dedicando nosso conhecimento e esforço para cuidar
               de pessoas.
@@ -181,10 +180,6 @@ function ClinicPage() {
           <div>
             <p className="eyebrow">Nossa trajetória</p>
             <h2>A mais de 13 anos oferecendo nosso melhor</h2>
-            <p>
-              Estamos a mais de 13 anos fazendo o que amamos, dedicando nosso conhecimento e esforço para cuidar
-              de pessoas.
-            </p>
             <ActionButton />
           </div>
         </div>
