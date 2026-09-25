@@ -115,8 +115,7 @@ function ClinicPage() {
       <PageHero
         eyebrow="Vitalcor"
         title="Sobre nós"
-        image="/media/clinica-vitalcor.webp"
-        imageAlt="Clínica Vitalcor em Três Lagoas"
+        className="page-hero--compact"
       />
 
       <section className="section clinic-intro">

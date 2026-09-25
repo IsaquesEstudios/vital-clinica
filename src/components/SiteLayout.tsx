@@ -41,8 +41,8 @@ export function SiteLayout({ children }: { children: ReactNode }) {
   </div>;
 }
 
-export function PageHero({ eyebrow, title, intro, image, imageAlt = "" }: { eyebrow: string; title: string; intro?: string; image?: string; imageAlt?: string }) {
- return <section className={`page-hero ${image ? "with-image" : ""}`}>
+export function PageHero({ eyebrow, title, intro, image, imageAlt = "", className = "" }: { eyebrow: string; title: string; intro?: string; image?: string; imageAlt?: string; className?: string }) {
+ return <section className={`page-hero ${image ? "with-image" : ""} ${className}`.trim()}>
   {image ? <img className="page-hero-image" src={image} alt={imageAlt}/> : null}<div className="page-hero-shade" />
   <div className="container page-hero-content"><p className="eyebrow">{eyebrow}</p><h1>{title}</h1>{intro?<p className="lead">{intro}</p>:null}</div>
  </section>
