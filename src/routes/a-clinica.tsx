@@ -122,7 +122,6 @@ function ClinicPage() {
       <section className="section clinic-intro">
         <div className="container clinic-intro-grid">
           <div className="clinic-copy">
-            <p className="eyebrow">Nossa clínica</p>
             <h2>Clinica VitalCor</h2>
             <p>
               A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como
@@ -137,8 +136,8 @@ function ClinicPage() {
           </div>
           <img
             className="clinic-feature-image"
-            src="/media/clinica-vital-recepcao.webp"
-            alt="Recepção da Clínica Vitalcor"
+            src="/media/clinica-vitalcor-1.webp"
+            alt="Fachada da Clínica Vitalcor"
           />
         </div>
       </section>
