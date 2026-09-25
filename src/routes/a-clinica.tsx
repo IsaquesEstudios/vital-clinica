@@ -126,9 +126,6 @@ function ClinicPage() {
           <div className="clinic-opening-copy">
             <p className="eyebrow">Sobre nós</p>
             <h1>Clínica VitalCor</h1>
-            <p className="clinic-opening-lead">
-              Cuidado cardiovascular com experiência, atualização e atenção às pessoas.
-            </p>
             <ActionButton />
           </div>
           <figure className="clinic-opening-media">
@@ -160,7 +157,6 @@ function ClinicPage() {
           </div>
           <figure className="clinic-reception-media">
             <img src="/media/clinica-vital-recepcao.webp" alt="Recepção da Clínica Vitalcor" />
-            <figcaption>Estrutura preparada para receber você com conforto e atenção.</figcaption>
           </figure>
         </div>
       </section>
@@ -249,7 +245,7 @@ function ClinicPage() {
         </div>
         <div className="container clinic-address">
           <p className="eyebrow">Onde estamos</p>
-          <p>Rua Dr. Munir Thomé, 2170 — Centro, Três Lagoas — MS</p>
+          <p>Rua Dr. Munir Thomé, 2170</p>
         </div>
       </section>
     </SiteLayout>
