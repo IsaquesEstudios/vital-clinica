@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ActionButton, PageHero, SiteLayout } from "@/components/SiteLayout";
 import {
-  Badge,
   Card,
   CardContent,
   CardHeader,
