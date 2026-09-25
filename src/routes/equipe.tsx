@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";import content from "@/data/vital-content.json";import {SiteLayout,PageHero,ActionButton} from "@/components/SiteLayout";import {Card,CardContent,CardHeader,CardMedia,CardTitle} from "@/design-system/vital-clinica-a4fa5f";
 export const Route=createFileRoute('/equipe')({head:()=>({meta:[{title:"Equipe Médica — Clínica Vitalcor"},{name:"description",content:"Conheça os cardiologistas da Clínica Vitalcor em Três Lagoas."},{property:"og:title",content:"Equipe Médica — Clínica Vitalcor"},{property:"og:description",content:"Profissionais dedicados ao cuidado cardiovascular em Três Lagoas."},{property:"og:type",content:"website"},{property:"og:url",content:"/equipe"},{name:"twitter:card",content:"summary_large_image"}],links:[{rel:"canonical",href:"/equipe"}]}),component:Page});
-const professionals=[
+function Page(){return <SiteLayout><PageHero eyebrow="Nossa equipe" title="Experiência que acolhe." intro="Conheça os profissionais que formam a Vitalcor." image="/media/fachada-vitalcor.webp" imageAlt="Fachada da Clínica Vitalcor"/>
   {name:'Dra. Marina Vasconcelos',role:'Cardiologista',image:'/media/medico-marina.webp'},
   {name:'Dra. Juliana Prado',role:'Cardiologista',image:'/media/medico-juliana.webp'},
   {name:'Dra. Camila Fontes',role:'Cardiologista',image:'/media/medico-camila.webp'},
