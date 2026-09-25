@@ -1,31 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, SiteLayout } from "@/components/SiteLayout";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  CardTitle,
-} from "@/design-system/vital-clinica-a4fa5f";
 
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
 const description =
   "A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento adequado das doenças do coração, para proporcionar uma melhor qualidade de vida aos seus pacientes.";
-
-const professionals = [
-  { name: "Dra. Marina Vasconcelos", role: "Cardiologista", image: "/media/medico-marina.webp" },
-  { name: "Dra. Juliana Prado", role: "Cardiologista", image: "/media/medico-juliana.webp" },
-  { name: "Dra. Camila Fontes", role: "Cardiologista", image: "/media/medico-camila.webp" },
-  { name: "Dra. Beatriz Ramos", role: "Cardiologista", image: "/media/medico-beatriz.webp" },
-  { name: "Dr. Rafael Monteiro", role: "Cardiologista", image: "/media/medico-rafael.webp" },
-  { name: "Dr. André Siqueira", role: "Cardiologista", image: "/media/medico-andre.webp" },
-  { name: "Dr. Ricardo Almeida", role: "Cardiologista", image: "/media/medico-ricardo.webp" },
-  { name: "Dr. Fernando Tavares", role: "Cardiologista", image: "/media/medico-fernando.webp" },
-  { name: "Dr. Paulo Henrique Nogueira", role: "Cardiologista", image: "/media/medico-paulo.webp" },
-  { name: "Dra. Larissa Duarte", role: "Cardiologista", image: "/media/medico-larissa.webp" },
-  { name: "Dr. Marcelo Kimura", role: "Cardiologista", image: "/media/medico-marcelo.webp" },
-];
 
 export const Route = createFileRoute("/a-clinica")({
   head: () => ({
@@ -147,30 +126,6 @@ function ClinicPage() {
               Estamos a mais de 13 anos fazendo o que amamos, dedicando nosso conhecimento e esforço para cuidar
               de pessoas.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section clinic-professionals">
-        <div className="container">
-          <div className="center-heading">
-            <p className="eyebrow">Equipe médica</p>
-            <h2>Nossos profissionais</h2>
-          </div>
-          <div className="team-grid">
-            {professionals.map((professional) => (
-              <Card key={professional.name}>
-                <CardMedia>
-                  <img src={professional.image} alt={professional.name} />
-                </CardMedia>
-                <CardHeader>
-                  <CardTitle>{professional.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{professional.role}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </section>
