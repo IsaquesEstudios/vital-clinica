@@ -144,30 +144,6 @@ function ClinicPage() {
         </div>
       </section>
 
-      <section className="section clinic-professionals">
-        <div className="container">
-          <div className="center-heading">
-            <p className="eyebrow">Equipe médica</p>
-            <h2>Nossos profissionais</h2>
-          </div>
-          <div className="team-grid">
-            {professionals.map((professional) => (
-              <Card key={professional.name}>
-                <CardMedia>
-                  <img src={professional.image} alt={professional.name} />
-                </CardMedia>
-                <CardHeader>
-                  <CardTitle>{professional.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{professional.role}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section clinic-legacy">
         <div className="container clinic-legacy-grid">
           <img
