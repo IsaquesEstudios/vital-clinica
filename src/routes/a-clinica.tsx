@@ -8,12 +8,6 @@ import {
   CardMedia,
   CardTitle,
 } from "@/design-system/vital-clinica-a4fa5f";
-import foto1 from "@/assets/profissional-foto-1.png.asset.json";
-import foto2 from "@/assets/profissional-foto-2.png.asset.json";
-import foto3 from "@/assets/profissional-foto-3.png.asset.json";
-import foto4 from "@/assets/profissional-foto-4.png.asset.json";
-import foto5 from "@/assets/profissional-foto-5.png.asset.json";
-import foto6 from "@/assets/profissional-foto-6.png.asset.json";
 
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
