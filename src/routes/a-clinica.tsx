@@ -143,17 +143,17 @@ function ClinicPage() {
 
       <section className="section clinic-care">
         <div className="container clinic-care-grid">
+          <img
+            className="clinic-care-image"
+            src="/media/clinica-vital-recepcao.webp"
+            alt="Recepção da Clínica Vitalcor"
+          />
           <div>
             <h2>Cuidando bem para Cuidar sempre.</h2>
             <p>
               Estamos a mais de 13 anos fazendo o que amamos, dedicando nosso conhecimento e esforço para cuidar
               de pessoas.
             </p>
-          </div>
-          <div className="clinic-attendance">
-            <h2>Atendimento</h2>
-            <p>Nossa equipe está pronta para atender você.</p>
-            <ActionButton />
           </div>
         </div>
       </section>
