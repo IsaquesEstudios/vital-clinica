@@ -25,7 +25,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <Link to="/" className="brand" aria-label="Vitalcor — início"><img src={logo} alt="Vitalcor" /></Link>
         <nav className="main-nav" aria-label="Navegação principal">
           <Link to="/">Início</Link><Link to="/a-clinica">A Clínica</Link>
-          <details className="nav-services"><summary>Serviços</summary><div className="service-menu">{services.map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div></details>
+          <details className="nav-services"><summary>Exames</summary><div className="service-menu">{services.map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div></details>
           <Link to="/equipe">Equipe</Link><Link to="/noticias">Notícias</Link><Link to="/contato">Contato</Link>
         </nav>
         <ActionButton />
