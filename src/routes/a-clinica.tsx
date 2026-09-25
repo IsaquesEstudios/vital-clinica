@@ -36,12 +36,12 @@ const professionals = [
 ] as const;
 
 const newProfessionals = [
-  { name: "Dra. Marina Vasconcelos", role: "Cardiologista", image: foto1.url },
-  { name: "Dra. Juliana Prado", role: "Cardiologista", image: foto2.url },
-  { name: "Dra. Camila Fontes", role: "Cardiologista", image: foto3.url },
-  { name: "Dra. Beatriz Ramos", role: "Cardiologista", image: foto4.url },
-  { name: "Dr. Rafael Monteiro", role: "Cardiologista", image: foto5.url },
-  { name: "Dr. André Siqueira", role: "Cardiologista", image: foto6.url },
+  { name: "Dra. Marina Vasconcelos", role: "Cardiologista", image: "/media/medico-marina.webp" },
+  { name: "Dra. Juliana Prado", role: "Cardiologista", image: "/media/medico-juliana.webp" },
+  { name: "Dra. Camila Fontes", role: "Cardiologista", image: "/media/medico-camila.webp" },
+  { name: "Dra. Beatriz Ramos", role: "Cardiologista", image: "/media/medico-beatriz.webp" },
+  { name: "Dr. Rafael Monteiro", role: "Cardiologista", image: "/media/medico-rafael.webp" },
+  { name: "Dr. André Siqueira", role: "Cardiologista", image: "/media/medico-andre.webp" },
 ];
 
 export const Route = createFileRoute("/a-clinica")({
