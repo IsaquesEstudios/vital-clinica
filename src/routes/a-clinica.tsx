@@ -181,8 +181,8 @@ function ClinicPage() {
             <h2>Nossos profissionais</h2>
           </div>
           <div className="team-grid">
-            {professionals.map((professional) => (
-              <Card key={professional.name} variant="outlined">
+            {[...professionals, ...newProfessionals].map((professional) => (
+              <Card key={professional.name}>
                 <CardMedia>
                   <img src={professional.image} alt={professional.name} />
                 </CardMedia>
@@ -191,7 +191,9 @@ function ClinicPage() {
                 </CardHeader>
                 <CardContent>
                   <p>{professional.role}</p>
-                  <p>{professional.registration}</p>
+                  {"registration" in professional ? (
+                    <Badge variant="champagne">{professional.registration}</Badge>
+                  ) : null}
                 </CardContent>
               </Card>
             ))}

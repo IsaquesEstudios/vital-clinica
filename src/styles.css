@@ -34,6 +34,7 @@ h3{font-size:var(--vc-space-5)}
 .intro-band{background:var(--vc-color-white)}
 .text-link{color:var(--vc-color-petroleum);font-weight:700}.text-link span{color:var(--vc-color-terracotta)}
 .card-grid,.article-grid,.team-grid,.three-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--vc-space-5)}
+.team-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 .services-section{background:var(--vc-color-off-white)}
 .trust-band,.values{background:var(--vc-color-champagne)}.trust-band img,.section-image{max-height:calc(var(--vc-space-8) * 8);object-fit:cover;border-radius:var(--vc-radius-lg);box-shadow:var(--vc-shadow-md)}
 .article-grid h2,.article-grid h3{margin-bottom:var(--vc-space-3)}
