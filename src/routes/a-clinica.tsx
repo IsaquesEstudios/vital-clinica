@@ -1,12 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, SiteLayout } from "@/components/SiteLayout";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardMedia,
-  CardTitle,
-} from "@/design-system/vital-clinica-a4fa5f";
 
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
