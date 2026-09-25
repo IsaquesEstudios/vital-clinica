@@ -1,12 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ActionButton, PageHero, SiteLayout } from "@/components/SiteLayout";
 import {
+  Badge,
   Card,
   CardContent,
   CardHeader,
   CardMedia,
   CardTitle,
 } from "@/design-system/vital-clinica-a4fa5f";
+import foto1 from "@/assets/profissional-foto-1.png.asset.json";
+import foto2 from "@/assets/profissional-foto-2.png.asset.json";
+import foto3 from "@/assets/profissional-foto-3.png.asset.json";
+import foto4 from "@/assets/profissional-foto-4.png.asset.json";
+import foto5 from "@/assets/profissional-foto-5.png.asset.json";
+import foto6 from "@/assets/profissional-foto-6.png.asset.json";
 
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
@@ -33,6 +40,15 @@ const professionals = [
     image: "/media/Nadia-Arenas-Versali.jpg",
   },
 ] as const;
+
+const newProfessionals = [
+  { name: "Dra. Marina Vasconcelos", role: "Cardiologista", image: foto1.url },
+  { name: "Dra. Juliana Prado", role: "Cardiologista", image: foto2.url },
+  { name: "Dra. Camila Fontes", role: "Cardiologista", image: foto3.url },
+  { name: "Dra. Beatriz Ramos", role: "Cardiologista", image: foto4.url },
+  { name: "Dr. Rafael Monteiro", role: "Cardiologista", image: foto5.url },
+  { name: "Dr. André Siqueira", role: "Cardiologista", image: foto6.url },
+];
 
 export const Route = createFileRoute("/a-clinica")({
   head: () => ({
