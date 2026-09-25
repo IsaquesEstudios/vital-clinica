@@ -1,28 +1,27 @@
 # Reconstrução da página A Clínica
 
-## Conteúdo original
-- Substituir os textos resumidos da página atual pelo conteúdo integral encontrado em `Vital-2.zip`, sem inventar ou reescrever informações.
-- Preservar a estrutura editorial original: “Sobre nós”, “Clínica Vitalcor”, “Cuidando bem para cuidar sempre”, “Atendimento”, “Nossos profissionais”, “Há mais de 13 anos oferecendo nosso melhor”, “Missão”, “Nosso compromisso” e “Nossos valores”.
-- Manter exatamente as informações dos profissionais e seus registros:
-  - Dr. Ulisses Calandrin — Cardiologista, CRM-MS 6601;
-  - Dra. Vanessa C. Calandrin — Cardiologista, CRM-MS 6602;
-  - Dra. Nádia Arenas Versali — Cardiologista e ergometrista, CRM/MS 9969.
+## Fonte do conteúdo
+- Usar o PDF enviado como referência definitiva para os textos e informações da página.
+- Preservar integralmente: apresentação da Vitalcor, texto “Cuidando bem para Cuidar sempre”, seis serviços, chamada de atendimento, três profissionais com especialidades e registros, missão, compromisso, valores e endereço.
+- Corrigir na página atual os dados que divergem do PDF, especialmente o nome “Dra. Nídia Arenas Versoli” e a grafia dos registros `CRM.MS`.
 
-## Composição da página
-- Reconstruir somente `/a-clinica`, mantendo o cabeçalho, rodapé, largura máxima e identidade visual Vitalcor já aplicados no projeto.
-- Organizar o conteúdo em blocos claros e convidativos, usando a hierarquia e os componentes visuais existentes.
-- Usar as seis imagens originais já disponíveis no projeto: fachada/ambiente da clínica, recepção, retratos dos três profissionais e foto da equipe.
-- Manter ações de agendamento nos pontos adequados, sem acrescentar formulários ou informações novas.
-- Adaptar a composição para computador e celular, sem alterar outras páginas.
+## Nova composição visual
+- Remover a abertura atual com fotografia ao fundo e texto sobreposto.
+- Criar uma abertura editorial clara e assimétrica: título e introdução em uma área própria, fotografia da fachada ao lado, sem sobreposição.
+- Alternar áreas brancas, off-white e azul-petróleo para dar ritmo à leitura, usando somente a identidade Vitalcor.
+- Mostrar a recepção em uma seção própria, acompanhando a história da clínica.
+- Transformar “Cuidando bem para Cuidar sempre” e “Atendimento” em uma faixa de destaque com os seis serviços do PDF e ação “Fale conosco”.
+- Apresentar os três profissionais com suas fotos, nomes, especialidades e registros exatos.
+- Usar a foto da equipe como imagem editorial ampla antes da área institucional.
+- Organizar missão, compromisso e valores com hierarquia clara, sem caixas excessivas nem elementos decorativos genéricos.
+- Manter todas as imagens separadas dos textos e adaptar a composição para uma coluna no celular.
 
-## SEO
-- Preservar o endereço `/a-clinica` e usar como fonte os dados originais da página antiga.
-- Manter um único H1 e distribuir os demais títulos em H2/H3 conforme a estrutura do conteúdo original.
-- Atualizar título, descrição, Open Graph, Twitter Card, canonical e dados estruturados de página, imagem principal e navegação hierárquica.
-- Usar uma descrição fiel ao texto original, sem promessas ou informações clínicas adicionais.
-- Aplicar textos alternativos descritivos às imagens originais.
+## SEO e estrutura
+- Manter um único H1 e organizar os demais títulos conforme a hierarquia do PDF.
+- Preservar o endereço `/a-clinica`, canonical, Open Graph, Twitter Card e dados estruturados já presentes.
+- Manter a descrição baseada no texto institucional original e os textos alternativos das imagens.
 
-## Validação
-- Conferir que todo o conteúdo textual do arquivo foi incluído sem omissões.
-- Validar imagens, links de agendamento, hierarquia dos títulos e metadados.
-- Revisar a página em computador e celular, verificando leitura, alinhamento e ausência de sobreposições.
+## Arquivos e validação
+- Alterar somente `src/routes/a-clinica.tsx` e os estilos específicos desta página em `src/styles.css`.
+- Conferir todos os textos do PDF, as seis imagens, os links dos serviços e a ação de contato.
+- Validar a página em computador e celular, sem sobreposição, imagens quebradas ou rolagem horizontal.
