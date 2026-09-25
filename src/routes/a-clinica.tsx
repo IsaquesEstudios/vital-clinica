@@ -11,7 +11,7 @@ import {
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
 const description =
-  "Conheça a Clínica Vitalcor, sua estrutura, profissionais e compromisso com a prevenção, o diagnóstico e o cuidado da saúde cardiovascular.";
+  "A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento adequado das doenças do coração, para proporcionar uma melhor qualidade de vida aos seus pacientes.";
 
 const professionals = [
   {
@@ -85,6 +85,21 @@ export const Route = createFileRoute("/a-clinica")({
                 },
                 { "@type": "ListItem", position: 2, name: "A Clínica", item: pageUrl },
               ],
+            },
+            {
+              "@type": "MedicalClinic",
+              "@id": "https://vital-clinica-reboot.lovable.app/#organization",
+              name: "Clínica Vitalcor",
+              url: "https://vital-clinica-reboot.lovable.app/",
+              telephone: "+55 67 98457-3508",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Rua Dr. Munir Thomé, 2170",
+                addressLocality: "Três Lagoas",
+                addressRegion: "MS",
+                postalCode: "79603-050",
+                addressCountry: "BR",
+              },
             },
           ],
         }),
