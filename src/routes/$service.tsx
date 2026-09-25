@@ -16,7 +16,7 @@ function ServicePage(){
  const guidance=s.sections.slice(5);
  return <SiteLayout><header className="service-hero"><div className="container service-hero-grid">
   {s.images[0]?<div className="service-hero-media"><img src={s.images[0].src} alt={s.images[0].alt||s.title}/></div>:null}
-   <div className="service-hero-copy"><p className="eyebrow">Atendimento Vitalcor</p><h1>{s.title}</h1><p className="lead">{s.slug==="doppler-de-carotidas-e-vertebrais"?s.sections[0]:s.description}</p><div className="button-row"><ActionButton/><Button variant="secondary" onClick={()=>window.location.href="https://wa.me/5567984573508"}>Falar no WhatsApp</Button></div></div>
+   <div className="service-hero-copy"><p className="eyebrow">Atendimento Vitalcor</p><h1>{s.title}</h1><p className="lead">{s.slug==="doppler-de-carotidas-e-vertebrais"?"Realizando uma análise com ultrassom de alta tecnologia é possível analisar as artérias do pescoço que levam sangue ao cérebro.":s.description}</p><div className="button-row"><ActionButton/><Button variant="secondary" onClick={()=>window.location.href="https://wa.me/5567984573508"}>Falar no WhatsApp</Button></div></div>
  </div></header><section className="section service-body"><div className="container service-layout">
    {s.slug==="doppler-de-carotidas-e-vertebrais"?<DopplerContent/>:<article className="service-copy"><section><p className="eyebrow">Sobre o serviço</p><h2>Entenda o atendimento</h2>{overview.map((text,index)=><p key={index}>{text}</p>)}</section>
   {details.length?<section><p className="eyebrow">Cuidado e precisão</p><h2>Indicações e benefícios</h2>{details.map((text,index)=><p key={index}>{text}</p>)}</section>:null}
@@ -40,7 +40,7 @@ const dopplerSymptoms = ["Tonturas frequentes","Desmaios","Problemas de visão",
 
 const dopplerQuestions = [
  {title:"O que é o Doppler de Carótidas e Vertebrais?",text:"É um exame de ultrassom vascular que avalia o fluxo sanguíneo nas artérias carótidas (pescoço, levam sangue ao cérebro) e vertebrais (também para o cérebro). Usa ondas sonoras para criar imagens e medir a velocidade e direção do fluxo, detectando possíveis obstruções ou estreitamentos."},
- {title:"Quando o exame é indicado?",text:"Recomendamos que seja feito um exame de Doppler de carótidas quando você sentir alguns dos sintomas apresentados acima."},
+ {title:"Quando o exame é indicado?",text:"Recomendamos que seja feito um exame de Doppler de carótidas quando você sentir alguns dos seguintes sintomas:"},
  {title:"Precisa de preparo?",text:"Geralmente não. Pode se alimentar e tomar seus remédios normalmente. Informe sobre alergias ou condições médicas relevantes. Evite usar cremes ou óleos no pescoço no dia do exame."},
  {title:"O que acontece após o exame?",text:"O cardiologista analisa os resultados e discute o tratamento. Inclui mudanças no estilo de vida (dieta, exercícios, parar de fumar), medicamentos (pressão, colesterol, diabetes) ou cirurgia (remover a placa ou desobstruir a artéria)."},
  {title:"Por que um cardiologista solicita este exame?",text:"Embora avalie vasos do pescoço, está ligado à saúde cardiovascular. A aterosclerose (placas de gordura) afeta tanto o coração quanto as carótidas. O cardiologista interpreta os resultados, avaliando o risco cardiovascular global do paciente."},
