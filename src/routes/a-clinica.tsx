@@ -1,5 +1,20 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero, SiteLayout } from "@/components/SiteLayout";
+import { Card, CardContent, CardHeader, CardMedia, CardTitle } from "@/design-system/vital-clinica-a4fa5f";
+
+const professionals = [
+  { name: "Dra. Nádia", role: "Cardiologista e Ergometrista", register: "CRM/MS 9969 · RQE 5750 / RQE 7490", photo: "/media/equipe/nadia.webp" },
+  { name: "Dr. Ulisses Calandrin", role: "Cardiologista", register: "CRM-MS 6601 · RQE 5089 / RQE 5620", photo: "/media/equipe/ulisses.webp" },
+  { name: "Dra. Vanessa C. Calandrin", role: "Cardiologista", register: "CRM-MS 6602 · RQE 5224 / RQE 6708", photo: "/media/equipe/vanessa.webp" },
+  { name: "Dr. Guilherme Pizzo Pagnani", role: "Médico", register: "CRM 8006/MS", photo: "/media/equipe/guilherme.webp" },
+  { name: "Dra. Francielle Garcia Vangan", role: "Infectologista", register: "CRM 8011/MS · RQE 4484", photo: "/media/equipe/francielle.webp" },
+  { name: "Dr. Erick Vinícius Milanez Bertin", role: "Cardiologista e Ecocardiografista", register: "CRM 11737 · Cardiologia RQE 6957 · Ecocardiografia RQE 7216", photo: "/media/equipe/erick.webp" },
+  { name: "Dr. Gustavo Floriano de Queiroz", role: "Cirurgia do Aparelho Digestivo", register: "CRM 7477 · RQE 4288", photo: "/media/equipe/gustavo.webp" },
+  { name: "Dra. Larissa Alves da Silveira", role: "Endocrinologia e Metabologia", register: "CRM 12138 · RQE 7242", photo: "/media/equipe/larissa.webp" },
+  { name: "Dr. Luiz Angeloni Neto", role: "Cardiologista", register: "CRM 15637 · RQE 4376", photo: "/media/equipe/luiz.webp" },
+  { name: "Dr. Tiago Hiroshi Koyanagui", role: "Hemodinâmica e Cardiologia Intervencionista", register: "CRM 15074 · RQE 94834 · Clínica Médica RQE 94835", photo: "/media/equipe/tiago.webp" },
+  { name: "Josiane Maria Carlos Nunes", role: "Nutricionista", register: "CRN 3 52927", photo: "/media/equipe/josiane.webp" },
+];
 
 const pageUrl = "https://vital-clinica-reboot.lovable.app/a-clinica";
 const pageImage = "https://vital-clinica-reboot.lovable.app/media/clinica-vitalcor.webp";
@@ -93,16 +108,15 @@ function ClinicPage() {
       <section className="section clinic-intro">
         <div className="container clinic-intro-grid">
           <div className="clinic-copy">
-            <h2>Clinica VitalCor</h2>
+            <h2>Mais do que uma clínica, um lugar para cuidar da sua saúde com confiança.</h2>
             <p>
-              A Clínica Vitalcor conta com o trabalho de um competente grupo de profissionais que tem como
-              objetivo a prevenção de doenças cardiovasculares, assim como a detecção precoce e o tratamento
-              adequado das doenças do coração, para proporcionar uma melhor qualidade de vida aos seus pacientes.
+              Sabemos que procurar um cardiologista pode gerar dúvidas e preocupações. Por isso, cada detalhe da
+              Clínica Vitalcor foi pensado para oferecer um atendimento acolhedor, seguro e eficiente.
             </p>
             <p>
-              Por este objetivo a Vitalcor dispõe de consultas médicas com cardiologistas que buscam estar sempre
-              atualizados, além de exames cardiológicos modernos para alcançar os variados diagnósticos e auxiliar
-              na tomada de decisão.
+              Com mais de 13 anos de experiência, reunimos especialistas em cardiologia, exames modernos e uma
+              estrutura completa para acompanhar você desde a prevenção até o tratamento, sempre com respeito,
+              atenção e compromisso com a sua saúde.
             </p>
           </div>
           <img
