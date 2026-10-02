@@ -5,12 +5,15 @@ import logo from "@/assets/logo-vitalcor-clean.png";
 
 const services = [
   ["Cardiologia", "cardiologia"],
-  ["Doppler", "doppler-de-carotidas-e-vertebrais"],
+  ["Ultrassonografia com Doppler de Carótidas", "doppler-de-carotidas-e-vertebrais"],
   ["Ecocardiograma", "ecocardiograma"],
   ["Eletrocardiograma", "eletrocardiograma"],
   ["Holter 24h", "holter-24h"],
   ["Exame MAPA", "mapa-monitorizacao-ambulatorial-da-pressao-arterial"],
+  ["MRPA", "mrpa"],
+  ["Polissonografia", "polissonografia"],
   ["Teste Ergométrico", "teste-ergometrico"],
+  ["Teste Cardiopulmonar (Ergoespirometria)", "teste-cardiopulmonar"],
 ] as const;
 
 export function ActionButton({ to = "/contato", children = "Agendar consulta", variant = "primary" }: { to?: string; children?: ReactNode; variant?: "primary" | "secondary" | "quiet" }) {
