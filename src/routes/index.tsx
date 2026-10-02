@@ -17,7 +17,7 @@ const examNames: Record<string, string> = {
 };
 const partners = [
  {name:"Brasil Benefícios",src:"/media/partners/logo-brasil-beneficios.png"},{name:"Labormed",src:"/media/partners/labormed.png"},
- {name:"Fidelidade El Kadri",src:"/media/partners/el-kadri.png"},{name:"ABRAPS",src:"/media/partners/abraps.png"},
+ {name:"Fidelidade El Kadri",src:"/media/partners/el-kadri-2.png"},{name:"ABRAPS",src:"/media/partners/abraps.png"},
  {name:"Bradesco Saúde",src:"/media/partners/bradesco-saude.png"},{name:"ArcelorMittal",src:"/media/partners/arcelormittal.png"},
  {name:"Vivest",src:"/media/partners/vivest.png"},{name:"GEAP Saúde",src:"/media/partners/geap-saude.png"},
  {name:"Unimed",src:"/media/partners/unimed.png"},{name:"SulAmérica",src:"/media/partners/sul-america.png"},
