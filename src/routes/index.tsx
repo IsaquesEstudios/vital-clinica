@@ -56,7 +56,7 @@ function Home(){
     <img className="home-intro-background" src="/media/Card-fundo.webp" alt="" aria-hidden="true" />
     <div className="container home-intro-grid">
      <div className="home-intro-copy"><h1>Cuidado que<br/>protege o seu<br/><em>maior bem.</em></h1><p>Cardiologia completa, tecnologia avançada e uma equipe dedicada à sua saúde e bem-estar.</p><div className="button-row"><ActionButton><span className="button-icon" aria-hidden="true">▣</span> Agendar consulta</ActionButton><Button variant="secondary" onClick={()=>window.location.href="https://wa.me/5567984573508"}><span className="button-icon" aria-hidden="true">◉</span> Falar no WhatsApp</Button></div></div>
-     <div className="home-intro-photo"><img src="/media/doutores-vital-clinica.webp" alt="Médicos da Clínica Vitalcor"/></div>
+     <div className="home-intro-photo"><img src="/media/doutores-vital-clinica-recortados.png" alt="Médicos da Clínica Vitalcor"/></div>
    </div>
   </section>
   <div className="container"><section className="proof-strip" aria-label="Diferenciais da Vitalcor">
