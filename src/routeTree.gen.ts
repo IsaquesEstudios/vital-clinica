@@ -9,46 +9,21 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TermosDeUsoRouteImport } from './routes/termos-de-uso'
-import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
-import { Route as NoticiasRouteImport } from './routes/noticias'
-import { Route as EquipeRouteImport } from './routes/equipe'
-import { Route as ContatoRouteImport } from './routes/contato'
-import { Route as AClinicaRouteImport } from './routes/a-clinica'
-import { Route as ServiceRouteImport } from './routes/$service'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ServiceRouteImport } from './routes/$service'
+import { Route as AClinicaRouteImport } from './routes/a-clinica'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as EquipeRouteImport } from './routes/equipe'
+import { Route as NoticiasRouteImport } from './routes/noticias'
+import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
+import { Route as TermosDeUsoRouteImport } from './routes/termos-de-uso'
 import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
-import { Route as Char91__mockupChar93PreviewSplatRouteImport } from './routes/[__mockup].preview.$'
 import { Route as Char91__componentChar93PreviewSplatRouteImport } from './routes/[__component].preview.$'
+import { Route as Char91__mockupChar93PreviewSplatRouteImport } from './routes/[__mockup].preview.$'
 
-const TermosDeUsoRoute = TermosDeUsoRouteImport.update({
-  id: '/termos-de-uso',
-  path: '/termos-de-uso',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PoliticaDePrivacidadeRoute = PoliticaDePrivacidadeRouteImport.update({
-  id: '/politica-de-privacidade',
-  path: '/politica-de-privacidade',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NoticiasRoute = NoticiasRouteImport.update({
-  id: '/noticias',
-  path: '/noticias',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EquipeRoute = EquipeRouteImport.update({
-  id: '/equipe',
-  path: '/equipe',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContatoRoute = ContatoRouteImport.update({
-  id: '/contato',
-  path: '/contato',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AClinicaRoute = AClinicaRouteImport.update({
-  id: '/a-clinica',
-  path: '/a-clinica',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServiceRoute = ServiceRouteImport.update({
@@ -56,9 +31,34 @@ const ServiceRoute = ServiceRouteImport.update({
   path: '/$service',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AClinicaRoute = AClinicaRouteImport.update({
+  id: '/a-clinica',
+  path: '/a-clinica',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EquipeRoute = EquipeRouteImport.update({
+  id: '/equipe',
+  path: '/equipe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticiasRoute = NoticiasRouteImport.update({
+  id: '/noticias',
+  path: '/noticias',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaDePrivacidadeRoute = PoliticaDePrivacidadeRouteImport.update({
+  id: '/politica-de-privacidade',
+  path: '/politica-de-privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermosDeUsoRoute = TermosDeUsoRouteImport.update({
+  id: '/termos-de-uso',
+  path: '/termos-de-uso',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
@@ -66,16 +66,16 @@ const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => NoticiasRoute,
 } as any)
-const Char91__mockupChar93PreviewSplatRoute =
-  Char91__mockupChar93PreviewSplatRouteImport.update({
-    id: '/__mockup/preview/$',
-    path: '/__mockup/preview/$',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const Char91__componentChar93PreviewSplatRoute =
   Char91__componentChar93PreviewSplatRouteImport.update({
     id: '/__component/preview/$',
     path: '/__component/preview/$',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91__mockupChar93PreviewSplatRoute =
+  Char91__mockupChar93PreviewSplatRouteImport.update({
+    id: '/__mockup/preview/$',
+    path: '/__mockup/preview/$',
     getParentRoute: () => rootRouteImport,
   } as any)
 
@@ -176,46 +176,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/termos-de-uso': {
-      id: '/termos-de-uso'
-      path: '/termos-de-uso'
-      fullPath: '/termos-de-uso'
-      preLoaderRoute: typeof TermosDeUsoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/politica-de-privacidade': {
-      id: '/politica-de-privacidade'
-      path: '/politica-de-privacidade'
-      fullPath: '/politica-de-privacidade'
-      preLoaderRoute: typeof PoliticaDePrivacidadeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/noticias': {
-      id: '/noticias'
-      path: '/noticias'
-      fullPath: '/noticias'
-      preLoaderRoute: typeof NoticiasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/equipe': {
-      id: '/equipe'
-      path: '/equipe'
-      fullPath: '/equipe'
-      preLoaderRoute: typeof EquipeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contato': {
-      id: '/contato'
-      path: '/contato'
-      fullPath: '/contato'
-      preLoaderRoute: typeof ContatoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/a-clinica': {
-      id: '/a-clinica'
-      path: '/a-clinica'
-      fullPath: '/a-clinica'
-      preLoaderRoute: typeof AClinicaRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/$service': {
@@ -225,11 +190,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServiceRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/a-clinica': {
+      id: '/a-clinica'
+      path: '/a-clinica'
+      fullPath: '/a-clinica'
+      preLoaderRoute: typeof AClinicaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/equipe': {
+      id: '/equipe'
+      path: '/equipe'
+      fullPath: '/equipe'
+      preLoaderRoute: typeof EquipeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/noticias': {
+      id: '/noticias'
+      path: '/noticias'
+      fullPath: '/noticias'
+      preLoaderRoute: typeof NoticiasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/politica-de-privacidade': {
+      id: '/politica-de-privacidade'
+      path: '/politica-de-privacidade'
+      fullPath: '/politica-de-privacidade'
+      preLoaderRoute: typeof PoliticaDePrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/termos-de-uso': {
+      id: '/termos-de-uso'
+      path: '/termos-de-uso'
+      fullPath: '/termos-de-uso'
+      preLoaderRoute: typeof TermosDeUsoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/noticias/$slug': {
@@ -239,18 +239,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasSlugRouteImport
       parentRoute: typeof NoticiasRoute
     }
-    '/__mockup/preview/$': {
-      id: '/__mockup/preview/$'
-      path: '/__mockup/preview/$'
-      fullPath: '/__mockup/preview/$'
-      preLoaderRoute: typeof Char91__mockupChar93PreviewSplatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/__component/preview/$': {
       id: '/__component/preview/$'
       path: '/__component/preview/$'
       fullPath: '/__component/preview/$'
       preLoaderRoute: typeof Char91__componentChar93PreviewSplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/__mockup/preview/$': {
+      id: '/__mockup/preview/$'
+      path: '/__mockup/preview/$'
+      fullPath: '/__mockup/preview/$'
+      preLoaderRoute: typeof Char91__mockupChar93PreviewSplatRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
