@@ -29,7 +29,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
         <nav className="main-nav" aria-label="Navegação principal">
           <Link to="/">Início</Link>
           <details className="nav-services"><summary>Exames</summary><div className="service-menu">{services.map(([label,service])=><Link key={service} to="/$service" params={{ service }}>{label}</Link>)}</div></details>
-          <Link to="/noticias">Notícias</Link><Link to="/a-clinica">A Clínica</Link><Link to="/equipe">Equipe</Link><Link to="/contato">Contato</Link>
+          <Link to="/a-clinica">Sobre nós</Link><Link to="/contato">Contato</Link><Link to="/noticias">Notícias</Link>
         </nav>
         <ActionButton />
       </div>
