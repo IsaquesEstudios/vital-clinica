@@ -127,22 +127,7 @@ function ClinicPage() {
         </div>
       </section>
 
-      <section className="section clinic-care">
-        <div className="container clinic-care-grid">
-          <img
-            className="clinic-care-image"
-            src="/media/clinica-vital-recepcao.webp"
-            alt="Recepção da Clínica Vitalcor"
-          />
-          <div>
-            <h2>Cuidando bem para Cuidar sempre.</h2>
-            <p>
-              Estamos a mais de 13 anos fazendo o que amamos, dedicando nosso conhecimento e esforço para cuidar
-              de pessoas.
-            </p>
-          </div>
-        </div>
-      </section>
+      
 
       <section className="section clinic-legacy">
         <div className="container clinic-legacy-grid">
@@ -187,6 +172,7 @@ function ClinicPage() {
           </div>
         </div>
       </section>
-    </SiteLayout>
+    <section className="section clinic-professionals"><div className="container"><div className="center-heading"><p className="eyebrow">Equipe médica</p><h2>Nossos profissionais</h2></div><div className="team-grid">{professionals.map((professional) => (<Card key={professional.name}><CardMedia><img src={professional.photo} alt={`Foto de ${professional.name}`}/></CardMedia><CardHeader><CardTitle>{professional.name}</CardTitle></CardHeader><CardContent><p>{professional.role}</p><p className="team-register">{professional.register}</p></CardContent></Card>))}</div></div></section>
+      </SiteLayout>
   );
 }
