@@ -6,7 +6,7 @@ const professionals = [
   { name: "Dra. Nádia", role: "Cardiologista e Ergometrista", register: "CRM/MS 9969 · RQE 5750 / RQE 7490", photo: "/media/equipe/nadia.webp" },
   { name: "Dr. Ulisses Calandrin", role: "Cardiologista", register: "CRM-MS 6601 · RQE 5089 / RQE 5620", photo: "/media/equipe/ulisses.webp" },
   { name: "Dra. Vanessa C. Calandrin", role: "Cardiologista", register: "CRM-MS 6602 · RQE 5224 / RQE 6708", photo: "/media/equipe/vanessa.webp" },
-  { name: "Dr. Guilherme Pizzo Pagnani", role: "Médico", register: "CRM 8006/MS", photo: "/media/equipe/guilherme.webp" },
+  { name: "Dr. Guilherme Pizzo Pagnani", role: "Cardiologista", register: "CRM 8006/MS", photo: "/media/equipe/guilherme.webp" },
   { name: "Dra. Francielle Garcia Vangan", role: "Infectologista", register: "CRM 8011/MS · RQE 4484", photo: "/media/equipe/francielle.webp" },
   { name: "Dr. Erick Vinícius Milanez Bertin", role: "Cardiologista e Ecocardiografista", register: "CRM 11737 · Cardiologia RQE 6957 · Ecocardiografia RQE 7216", photo: "/media/equipe/erick.webp" },
   { name: "Dr. Gustavo Floriano de Queiroz", role: "Cirurgia do Aparelho Digestivo", register: "CRM 7477 · RQE 4288", photo: "/media/equipe/gustavo.webp" },
