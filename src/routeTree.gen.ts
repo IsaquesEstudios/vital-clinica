@@ -14,6 +14,7 @@ import { Route as ServiceRouteImport } from './routes/$service'
 import { Route as AClinicaRouteImport } from './routes/a-clinica'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as EquipeRouteImport } from './routes/equipe'
+import { Route as ExamesRouteImport } from './routes/exames'
 import { Route as NoticiasRouteImport } from './routes/noticias'
 import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
 import { Route as TermosDeUsoRouteImport } from './routes/termos-de-uso'
@@ -44,6 +45,11 @@ const ContatoRoute = ContatoRouteImport.update({
 const EquipeRoute = EquipeRouteImport.update({
   id: '/equipe',
   path: '/equipe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExamesRoute = ExamesRouteImport.update({
+  id: '/exames',
+  path: '/exames',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NoticiasRoute = NoticiasRouteImport.update({
@@ -85,6 +91,7 @@ export interface FileRoutesByFullPath {
   '/a-clinica': typeof AClinicaRoute
   '/contato': typeof ContatoRoute
   '/equipe': typeof EquipeRoute
+  '/exames': typeof ExamesRoute
   '/noticias': typeof NoticiasRouteWithChildren
   '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
   '/termos-de-uso': typeof TermosDeUsoRoute
@@ -98,6 +105,7 @@ export interface FileRoutesByTo {
   '/a-clinica': typeof AClinicaRoute
   '/contato': typeof ContatoRoute
   '/equipe': typeof EquipeRoute
+  '/exames': typeof ExamesRoute
   '/noticias': typeof NoticiasRouteWithChildren
   '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
   '/termos-de-uso': typeof TermosDeUsoRoute
@@ -112,6 +120,7 @@ export interface FileRoutesById {
   '/a-clinica': typeof AClinicaRoute
   '/contato': typeof ContatoRoute
   '/equipe': typeof EquipeRoute
+  '/exames': typeof ExamesRoute
   '/noticias': typeof NoticiasRouteWithChildren
   '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
   '/termos-de-uso': typeof TermosDeUsoRoute
@@ -127,6 +136,7 @@ export interface FileRouteTypes {
     | '/a-clinica'
     | '/contato'
     | '/equipe'
+    | '/exames'
     | '/noticias'
     | '/politica-de-privacidade'
     | '/termos-de-uso'
@@ -140,6 +150,7 @@ export interface FileRouteTypes {
     | '/a-clinica'
     | '/contato'
     | '/equipe'
+    | '/exames'
     | '/noticias'
     | '/politica-de-privacidade'
     | '/termos-de-uso'
@@ -153,6 +164,7 @@ export interface FileRouteTypes {
     | '/a-clinica'
     | '/contato'
     | '/equipe'
+    | '/exames'
     | '/noticias'
     | '/politica-de-privacidade'
     | '/termos-de-uso'
@@ -167,6 +179,7 @@ export interface RootRouteChildren {
   AClinicaRoute: typeof AClinicaRoute
   ContatoRoute: typeof ContatoRoute
   EquipeRoute: typeof EquipeRoute
+  ExamesRoute: typeof ExamesRoute
   NoticiasRoute: typeof NoticiasRouteWithChildren
   PoliticaDePrivacidadeRoute: typeof PoliticaDePrivacidadeRoute
   TermosDeUsoRoute: typeof TermosDeUsoRoute
@@ -209,6 +222,13 @@ declare module '@tanstack/react-router' {
       path: '/equipe'
       fullPath: '/equipe'
       preLoaderRoute: typeof EquipeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/exames': {
+      id: '/exames'
+      path: '/exames'
+      fullPath: '/exames'
+      preLoaderRoute: typeof ExamesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/noticias': {
@@ -274,6 +294,7 @@ const rootRouteChildren: RootRouteChildren = {
   AClinicaRoute: AClinicaRoute,
   ContatoRoute: ContatoRoute,
   EquipeRoute: EquipeRoute,
+  ExamesRoute: ExamesRoute,
   NoticiasRoute: NoticiasRouteWithChildren,
   PoliticaDePrivacidadeRoute: PoliticaDePrivacidadeRoute,
   TermosDeUsoRoute: TermosDeUsoRoute,
