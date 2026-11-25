@@ -12,7 +12,6 @@ const professionals = [
   { name: "Dr. Gustavo Floriano de Queiroz", role: "Cirurgia do Aparelho Digestivo", register: "CRM 7477 · RQE 4288", photo: "/media/equipe/gustavo.webp" },
   { name: "Dra. Larissa Alves da Silveira", role: "Endocrinologia e Metabologia", register: "CRM 12138 · RQE 7242", photo: "/media/equipe/larissa.webp" },
   { name: "Dr. Luiz Angeloni Neto", role: "Cardiologista", register: "CRM 15637 · RQE 4376", photo: "/media/equipe/luiz.webp" },
-  { name: "Dr. Tiago Hiroshi Koyanagui", role: "Hemodinâmica e Cardiologia Intervencionista", register: "CRM 15074 · RQE 94834 · Clínica Médica RQE 94835", photo: "/media/equipe/tiago.webp" },
   { name: "Josiane Maria Carlos Nunes", role: "Nutricionista", register: "CRN 3 52927", photo: "/media/equipe/josiane.webp" },
 ];
 
